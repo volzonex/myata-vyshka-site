@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     МЯТА VYSHKA (Myata lounge «Вышка») — панорамный лаундж, Алматы.
+     Дизайн: тёмный + неоновая мятная зелень (бренд «Мята»), модно.
+     РЕАЛЬНОЕ: рейтинг 4.7/2341 и отзывы 2ГИС, фото интерьера из их
+     Instagram, WhatsApp/резерв, часы, Instagram, 2ГИС.
+     ПЛЕЙСХОЛДЕР: цены меню (меню — на 2ГИС / в WhatsApp).
+     ============================================================ -->
+
+<title>МЯТА VYSHKA — панорамный лаундж-бар в Алматы | Резерв столика</title>
+<meta name="description" content="МЯТА VYSHKA — первая панорамная мята lounge в Алматы на 16–18 этажах. Кальян, кухня, караоке, летняя терраса, живая музыка, панорамный вид. 4.7★ на 2ГИС, 2341 отзыв. Ауэзова 14а.">
+<meta name="keywords" content="кальян Алматы, лаундж Алматы, панорамный бар Алматы, Мята Вышка, караоке Алматы, Ауэзова 14, бар с видом Алматы, myata vyshka">
+
+<meta property="og:title" content="МЯТА VYSHKA — панорамный лаундж-бар в Алматы">
+<meta property="og:description" content="Первая панорамная мята lounge. Кальян · кухня · караоке · терраса · вид на город. 4.7★ и 2341 отзыв на 2ГИС.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c110e'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' fill='%2335d98a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrClub",
+  "name": "МЯТА VYSHKA",
+  "description": "Первая панорамная мята lounge в Алматы на 16–18 этажах: кальян, кухня, караоке, летняя терраса, живая музыка, панорамный вид.",
+  "image": "assets/hero.jpg",
+  "priceRange": "₸₸",
+  "telephone": "+77017771752",
+  "openingHours": ["Su-Th 16:00-03:00","Fr-Sa 16:00-04:00"],
+  "address": { "@type": "PostalAddress", "streetAddress": "улица Ауэзова, 14а", "addressLocality": "Алматы", "addressCountry": "KZ" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "2341" },
+  "sameAs": [ "https://www.instagram.com/myata_vyshka", "https://2gis.kz/almaty/firm/70000001041444514" ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#0c110e; --bg2:#111813; --card:#16201a; --ink:#e9f2ea; --muted:#8aa093;
+    --mint:#35d98a; --mint-lt:#66f2ac; --mint-dp:#1fae6a; --line:rgba(53,217,138,.2);
+    --wa:#25d366; --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Manrope',-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:'Syne',sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.02em}
+  section{padding:100px 22px}
+  .wrap{max-width:1140px;margin:0 auto}
+  .center{text-align:center}
+  a{color:inherit}
+  .eyebrow{text-transform:uppercase;letter-spacing:.34em;font-size:.7rem;font-weight:700;color:var(--mint);margin-bottom:16px}
+  h2.title{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:10px;color:#f2fbf5}
+  .lead{color:var(--muted);max-width:600px;margin:0 auto 46px;font-size:1.03rem}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .85s ease,transform .85s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(12,17,14,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 22px}
+  .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:1px;color:#fff}
+  .logo b{color:var(--mint)}
+  .nav-cta{display:flex;gap:12px;align-items:center}
+  .nav-phone{font-weight:600;text-decoration:none;font-size:.92rem;color:var(--muted)}
+  @media(max-width:560px){.nav-phone{display:none}}
+
+  .btn{display:inline-flex;align-items:center;gap:9px;border:none;border-radius:100px;padding:15px 32px;font-family:'Manrope',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:.25s}
+  .btn-mint{background:var(--mint);color:#082013;box-shadow:0 0 24px rgba(53,217,138,.35)}
+  .btn-mint:hover{background:var(--mint-lt);transform:translateY(-2px);box-shadow:0 0 34px rgba(53,217,138,.5)}
+  .btn-wa{background:var(--wa);color:#fff}
+  .btn-wa:hover{filter:brightness(.95);transform:translateY(-2px)}
+  .btn-out{background:transparent;border:1px solid var(--mint);color:var(--mint-lt)}
+  .btn-out:hover{background:var(--mint);color:#082013}
+  .btn-sm{padding:11px 22px;font-size:.7rem}
+
+  .hero{position:relative;min-height:96vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background:url('assets/hero.jpg') center/cover;transform:scale(1.05)}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,10,.55),rgba(8,14,10,.86))}
+  .hero-inner{position:relative;z-index:2;padding:60px 20px;max-width:900px}
+  .hero .kick{text-transform:uppercase;letter-spacing:.4em;font-size:.72rem;font-weight:700;color:var(--mint-lt);margin-bottom:26px}
+  .hero h1{font-size:clamp(3.4rem,14vw,9rem);color:#fff;text-shadow:0 0 40px rgba(53,217,138,.4)}
+  .hero h1 b{color:var(--mint);text-shadow:0 0 30px rgba(53,217,138,.8)}
+  .hero .tag{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.05rem,3.2vw,1.5rem);color:#dcece1;margin:14px 0 24px}
+  .hero-rating{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:rgba(53,217,138,.08);color:#fff;padding:9px 22px;border-radius:100px;font-size:.9rem;margin-bottom:32px;backdrop-filter:blur(6px)}
+  .hero-rating b{color:var(--mint-lt)}
+  .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .hero-note{margin-top:20px;font-size:.76rem;color:#c5d8cb;letter-spacing:.12em;text-transform:uppercase}
+
+  .stats{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:40px 16px;text-align:center;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:none}
+  .stat .n{font-family:'Syne',sans-serif;font-weight:800;font-size:2.5rem;color:var(--mint);line-height:1}
+  .stat .l{font-size:.74rem;color:var(--muted);margin-top:10px;letter-spacing:.06em;text-transform:uppercase}
+  @media(max-width:640px){.stat-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+  .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+  @media(max-width:760px){.feat{grid-template-columns:1fr}}
+  .fcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:36px 30px;transition:.25s}
+  .fcard:hover{transform:translateY(-4px);border-color:var(--mint-dp);box-shadow:0 20px 44px rgba(0,0,0,.45)}
+  .fcard .ic{font-size:1.9rem;margin-bottom:12px}
+  .fcard h3{font-size:1.5rem;margin-bottom:8px;color:#f2fbf5}
+  .fcard p{color:var(--muted);font-size:.93rem}
+  .price-note{text-align:center;color:var(--muted);font-size:.84rem;margin-top:28px}
+  .price-note a{color:var(--mint-lt);text-decoration:none;font-weight:600;border-bottom:1px solid var(--mint-dp)}
+
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:760px){.gal{grid-template-columns:repeat(2,1fr)}}
+  .gal figure{overflow:hidden;border-radius:var(--radius);aspect-ratio:4/5}
+  .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+  .gal figure:hover img{transform:scale(1.07)}
+
+  .reviews{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .rev-head{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:42px}
+  .rev-score{font-family:'Syne',sans-serif;font-weight:800;font-size:3.8rem;color:var(--mint);line-height:1}
+  .stars{color:var(--mint);letter-spacing:2px}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:760px){.rev-grid{grid-template-columns:1fr}}
+  .rev{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  .rev .stars{font-size:.88rem;margin-bottom:12px}
+  .rev p{font-size:.95rem;color:#d7e6db}
+  .rev .who{margin-top:16px;font-weight:700;font-size:.78rem;color:var(--mint-lt);letter-spacing:.08em;text-transform:uppercase}
+
+  .booking{text-align:center;background:radial-gradient(ellipse at center,rgba(53,217,138,.1),transparent 72%)}
+  .book-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+  .book-phone{margin-top:30px}
+  .book-phone a{text-decoration:none;font-family:'Syne',sans-serif;font-weight:800;font-size:1.9rem;color:var(--mint-lt)}
+  .book-phone span{display:block;font-size:.72rem;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px;font-family:'Manrope'}
+
+  .addr{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.5rem,4vw,2.2rem);color:#f2fbf5}
+  .hours{color:var(--muted);margin-top:10px;letter-spacing:.03em}
+
+  footer{background:#080c09;color:var(--muted);padding:56px 22px 34px;text-align:center;border-top:1px solid var(--line)}
+  footer .logo{color:#fff;margin-bottom:16px;display:inline-block}
+  .foot-links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin:20px 0}
+  .foot-links a{text-decoration:none;color:var(--mint-lt);letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;font-weight:600}
+  .foot-links a:hover{color:#fff}
+  footer .small{font-size:.74rem;color:#5f7267;margin-top:18px}
+
+  .fab{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.4)}
+  .fab svg{width:31px;height:31px;fill:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">МЯТА<b>·</b>VYSHKA</div>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+77017771752">+7 701 777 17 52</a>
+      <a class="btn btn-mint btn-sm" href="https://wa.me/77017771752?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%BB">Резерв</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="kick">Первая панорамная мята lounge · Алматы</div>
+    <h1 class="display">МЯТА <b>VYSHKA</b></h1>
+    <div class="tag">Кальян · кухня · караоке · вид на город с 18 этажа</div>
+    <div class="hero-rating">★ <b>4.7</b>&nbsp;на 2ГИС · 2341 отзыв</div>
+    <div class="hero-btns">
+      <a class="btn btn-wa" href="https://wa.me/77017771752?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%BB">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.4A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3a2.8 2.8 0 00-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.4-.3z"/></svg>
+        Забронировать стол
+      </a>
+      <a class="btn btn-out" href="https://2gis.kz/almaty/firm/70000001041444514/tab/menu">Меню</a>
+    </div>
+    <div class="hero-note">Вс–Чт 16:00–03:00 · Пт–Сб 16:00–04:00 · Ауэзова 14а, 16–18 этажи</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat-grid">
+    <div class="stat"><div class="n">4.7★</div><div class="l">2341 отзыв 2ГИС</div></div>
+    <div class="stat"><div class="n">16–18</div><div class="l">этажи · панорама</div></div>
+    <div class="stat"><div class="n">🎤</div><div class="l">караоке</div></div>
+    <div class="stat"><div class="n">до 04</div><div class="l">в пт–сб</div></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap center reveal">
+    <div class="eyebrow">Что у нас</div>
+    <h2 class="title">Место ярких традиций</h2>
+    <p class="lead">Панорамный лаундж на высоте — кальян, кухня и атмосфера, куда возвращаются.</p>
+    <div class="feat" style="text-align:left">
+      <div class="fcard"><div class="ic">🌆</div><h3>Панорамный вид</h3><p>16, 17 и 18 этажи — весь Алматы под вами. Лучший вид в городе, особенно на закате.</p></div>
+      <div class="fcard"><div class="ic">💨</div><h3>Кальян</h3><p>Фирменные кальяны от мастеров — подбор вкуса под ваше настроение.</p></div>
+      <div class="fcard"><div class="ic">🍽️</div><h3>Кухня</h3><p>Европейская и итальянская кухня: пицца, паста, стейки, морепродукты, кебабы.</p></div>
+      <div class="fcard"><div class="ic">🎤</div><h3>Караоке</h3><p>Пойте любимые хиты — караоке для компании и особых вечеров.</p></div>
+      <div class="fcard"><div class="ic">🎶</div><h3>Живая музыка · DJ</h3><p>По вечерам — музыканты и диджеи. Можно танцевать до самой ночи.</p></div>
+      <div class="fcard"><div class="ic">🌿</div><h3>Летняя терраса</h3><p>Открытая терраса с видом — тёплые вечера под открытым небом.</p></div>
+    </div>
+    <p class="price-note reveal"><a href="https://2gis.kz/almaty/firm/70000001041444514/tab/menu">Смотреть меню и цены на 2ГИС →</a></p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap center reveal">
+    <div class="eyebrow">Атмосфера</div>
+    <h2 class="title" style="margin-bottom:40px">МЯТА изнутри</h2>
+    <!-- РЕАЛЬНЫЕ фото из их Instagram @myata_vyshka -->
+    <div class="gal">
+      <figure><img src="assets/g1.jpg" alt="МЯТА VYSHKA — интерьер, Алматы" loading="lazy"></figure>
+      <figure><img src="assets/g2.jpg" alt="МЯТА VYSHKA — атмосфера" loading="lazy"></figure>
+      <figure><img src="assets/g3.jpg" alt="МЯТА VYSHKA — лаундж" loading="lazy"></figure>
+      <figure><img src="assets/g4.jpg" alt="МЯТА VYSHKA — вечер" loading="lazy"></figure>
+      <figure><img src="assets/g5.jpg" alt="МЯТА VYSHKA — панорама" loading="lazy"></figure>
+      <figure><img src="assets/g6.jpg" alt="МЯТА VYSHKA — кухня и напитки" loading="lazy"></figure>
+    </div>
+    <p class="price-note reveal"><a href="https://www.instagram.com/myata_vyshka">Больше в Instagram @myata_vyshka →</a></p>
+  </div>
+</section>
+
+<section class="reviews reveal">
+  <div class="wrap center">
+    <div class="eyebrow">Отзывы</div>
+    <div class="rev-head">
+      <div class="rev-score">4.7</div>
+      <div style="text-align:left">
+        <div class="stars">★★★★★</div>
+        <div style="color:var(--muted);font-size:.9rem">на основе 2341 отзыва на 2ГИС</div>
+      </div>
+    </div>
+    <!-- РЕАЛЬНЫЕ отзывы с 2ГИС -->
+    <div class="rev-grid" style="text-align:left">
+      <div class="rev"><div class="stars">★★★★★</div><p>«Всё было на высшем уровне! Отличный вид, дружелюбный и вежливый персонал, очень хорошее обслуживание.»</p><div class="who">R. K.</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>«Нурбакыт — очень внимательный, приятный официант, просто лучший. Сервис на высшем уровне!»</p><div class="who">Аслан Динахметов</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>«Всё очень классно, официант Нурбакыт очень хорошо работает 🔥 Обязательно вернёмся.»</p><div class="who">Laura Zhalgasova</div></div>
+    </div>
+    <p class="price-note"><a href="https://2gis.kz/almaty/firm/70000001041444514/tab/reviews">Читать все отзывы на 2ГИС →</a></p>
+  </div>
+</section>
+
+<section class="booking reveal" id="booking">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--mint)">Резерв</div>
+    <h2 class="title">Забронируйте стол с видом</h2>
+    <p class="lead">Резерв с 14:00 · напишите нам — подберём лучший столик у панорамы</p>
+    <div class="book-btns">
+      <a class="btn btn-mint" href="https://wa.me/77017771752?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%BB">Резерв в WhatsApp</a>
+      <a class="btn btn-out" href="tel:+77017771752">Позвонить</a>
+    </div>
+    <div class="book-phone">
+      <a href="tel:+77017771752"><span>Резерв · WhatsApp</span>+7 701 777 17 52</a>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="reveal" style="padding-top:0">
+  <div class="wrap center">
+    <div class="eyebrow">Как нас найти</div>
+    <div class="addr">Алматы, ул. Ауэзова 14а · 16–18 этажи</div>
+    <div class="hours">Вс–Чт 16:00–03:00 · Пт–Сб 16:00–04:00</div>
+    <p class="price-note" style="margin-top:24px"><a href="https://2gis.kz/almaty/firm/70000001041444514">Открыть на карте 2ГИС и построить маршрут →</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="logo" style="font-size:1.4rem">МЯТА<b style="color:var(--mint)">·</b>VYSHKA</div>
+  <div style="letter-spacing:.05em">Панорамный лаундж-бар в Алматы · Ауэзова 14а</div>
+  <div class="foot-links">
+    <a href="https://wa.me/77017771752">WhatsApp</a>
+    <a href="tel:+77017771752">Позвонить</a>
+    <a href="https://2gis.kz/almaty/firm/70000001041444514/tab/menu">Меню</a>
+    <a href="https://www.instagram.com/myata_vyshka">Instagram</a>
+    <a href="https://2gis.kz/almaty/firm/70000001041444514">2ГИС</a>
+  </div>
+  <div style="font-weight:500">Вс–Чт 16:00–03:00 · Пт–Сб 16:00–04:00</div>
+  <div class="small">© МЯТА VYSHKA. Все права защищены.</div>
+</footer>
+
+<a class="fab" href="https://wa.me/77017771752?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%BB" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.4A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3a2.8 2.8 0 00-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.4-.3z"/></svg>
+</a>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
