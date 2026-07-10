@@ -113,6 +113,24 @@
   .fcard p{color:var(--muted);font-size:.93rem}
   .price-note{text-align:center;color:var(--muted);font-size:.84rem;margin-top:28px}
   .price-note a{color:var(--mint-lt);text-decoration:none;font-weight:600;border-bottom:1px solid var(--mint-dp)}
+  /* меню-аккордеон */
+  .menu-tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+  .menu-tab{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:100px;padding:8px 16px;font-family:'Manrope';font-weight:600;font-size:.8rem;cursor:pointer;transition:.2s}
+  .menu-tab.active,.menu-tab:hover{background:var(--mint);color:#082013;border-color:var(--mint)}
+  .menu-acc{max-width:760px;margin:0 auto;text-align:left}
+  .acc{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;background:var(--card)}
+  .acc summary{list-style:none;cursor:pointer;padding:17px 22px;display:flex;align-items:center;gap:12px;font-family:'Syne',sans-serif;font-weight:700;font-size:1.12rem;color:#f2fbf5}
+  .acc summary::-webkit-details-marker{display:none}
+  .acc summary .cnt{margin-left:auto;font-family:'Manrope';font-weight:600;font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .acc summary .chev{color:var(--mint);transition:transform .25s;font-size:.9rem}
+  .acc[open] summary .chev{transform:rotate(90deg)}
+  .acc[open] summary{border-bottom:1px solid var(--line)}
+  .acc-body{padding:8px 22px 16px}
+  .mrow{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(53,217,138,.13)}
+  .mrow:last-child{border-bottom:none}
+  .mn{flex:1;font-weight:400;color:var(--ink);font-size:.98rem}
+  .mn small{display:block;color:var(--muted);font-size:.78rem;font-weight:300}
+  .mp{font-family:'Syne',sans-serif;font-weight:700;color:var(--mint-lt);white-space:nowrap}
 
   .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   @media(max-width:760px){.gal{grid-template-columns:repeat(2,1fr)}}
@@ -207,7 +225,152 @@
       <div class="fcard"><div class="ic">🎶</div><h3>Живая музыка · DJ</h3><p>По вечерам — музыканты и диджеи. Можно танцевать до самой ночи.</p></div>
       <div class="fcard"><div class="ic">🌿</div><h3>Летняя терраса</h3><p>Открытая терраса с видом — тёплые вечера под открытым небом.</p></div>
     </div>
-    <p class="price-note reveal"><a href="https://2gis.kz/almaty/firm/70000001041444514/tab/menu">Смотреть меню и цены на 2ГИС →</a></p>
+    <p class="price-note reveal"><a href="#menu">Полное меню с ценами ниже ↓</a></p>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap center reveal">
+    <div class="eyebrow">Меню</div>
+    <h2 class="title" style="margin-bottom:8px">Кухня и бар</h2>
+    <p class="lead">Выберите категорию — раскроется список с ценами. Полное меню — на месте или в WhatsApp.</p>
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-g="all">Всё</button>
+      <button class="menu-tab" data-g="food">Кухня</button>
+      <button class="menu-tab" data-g="bar">Бар</button>
+    </div>
+    <div class="menu-acc">
+      <!-- РЕАЛЬНЫЕ цены из меню МЯТА (скриншот от клиента) -->
+      <details class="acc" data-g="food" open><summary><span class="chev">▸</span> Салаты <span class="cnt">18 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Цезарь с курицей</span><span class="mp">3 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Цезарь с лососем</span><span class="mp">4 290 ₸</span></div>
+        <div class="mrow"><span class="mn">Салат с сёмгой</span><span class="mp">4 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Тёплый салат от шефа</span><span class="mp">4 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Тёплый салат с телятиной</span><span class="mp">4 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Руккола с креветками</span><span class="mp">3 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Греческий</span><span class="mp">3 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Салат с тунцом</span><span class="mp">3 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Малибу</span><span class="mp">3 290 ₸</span></div>
+        <div class="mrow"><span class="mn">Салат Свежий</span><span class="mp">2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Оливье</span><span class="mp">3 190 ₸</span></div>
+        <div class="mrow"><span class="mn">Салат с хрустящими шампиньонами</span><span class="mp">2 990 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Горячие блюда <span class="cnt">15 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Говядина на жаровне</span><span class="mp">4 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Куриное филе на жаровне</span><span class="mp">3 790 ₸</span></div>
+        <div class="mrow"><span class="mn">Судак на жаровне</span><span class="mp">4 290 ₸</span></div>
+        <div class="mrow"><span class="mn">Цыплёнок корнишон</span><span class="mp">4 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Мясо по-тайски с рисом</span><span class="mp">4 790 ₸</span></div>
+        <div class="mrow"><span class="mn">Тигровые креветки с рисом</span><span class="mp">3 790 ₸</span></div>
+        <div class="mrow"><span class="mn">Дорадо на гриле</span><span class="mp">5 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Филе миньон</span><span class="mp">5 790 ₸</span></div>
+        <div class="mrow"><span class="mn">Курица BBQ</span><span class="mp">3 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Чикен строган</span><span class="mp">3 990 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Стейки <span class="cnt">4 позиции</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Тибон стейк</span><span class="mp">7 490 ₸</span></div>
+        <div class="mrow"><span class="mn">Рибай стейк</span><span class="mp">7 490 ₸</span></div>
+        <div class="mrow"><span class="mn">Пепер стейк из конины <small>300 гр</small></span><span class="mp">7 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Стейк лосось</span><span class="mp">6 790 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Паста <span class="cnt">7 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Фетучини Альфредо</span><span class="mp">3 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Спагетти с морепродуктами</span><span class="mp">4 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Nero с мидиями и креветками</span><span class="mp">4 190 ₸</span></div>
+        <div class="mrow"><span class="mn">Спагетти Болоньезе</span><span class="mp">4 190 ₸</span></div>
+        <div class="mrow"><span class="mn">Пенне Арабьята</span><span class="mp">3 190 ₸</span></div>
+        <div class="mrow"><span class="mn">Тальятелли с говядиной</span><span class="mp">3 990 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Пицца <span class="cnt">6 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Маргарита</span><span class="mp">3 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Пепперони</span><span class="mp">3 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Болоньезе</span><span class="mp">4 090 ₸</span></div>
+        <div class="mrow"><span class="mn">4 сезона</span><span class="mp">4 290 ₸</span></div>
+        <div class="mrow"><span class="mn">Сырная</span><span class="mp">4 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Хачапури по-Мирельски</span><span class="mp">3 690 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Шашлык <span class="cnt">7 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Баранина</span><span class="mp">2 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Антрекот</span><span class="mp">2 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Люля</span><span class="mp">2 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Окорочка</span><span class="mp">2 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Крылышки</span><span class="mp">2 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Шашлычный набор <small>3–4 персоны</small></span><span class="mp">18 190 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Блюда на компанию <span class="cnt">5 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Хуга босс <small>6–8 персон</small></span><span class="mp">37 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Мясной микс <small>4–5 персон</small></span><span class="mp">29 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Рыбный микс <small>4–5 персон</small></span><span class="mp">28 790 ₸</span></div>
+        <div class="mrow"><span class="mn">Мясной дуэт <small>6–7 персон</small></span><span class="mp">28 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Ассорти из колбасок</span><span class="mp">19 790 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Супы <span class="cnt">7 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Том Ям</span><span class="mp">4 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Рамен с говядиной</span><span class="mp">3 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Рамен с курицей</span><span class="mp">3 190 ₸</span></div>
+        <div class="mrow"><span class="mn">Похлёбка из баранины</span><span class="mp">2 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Крем-суп из чечевицы</span><span class="mp">2 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Суп лапша по-домашнему</span><span class="mp">2 590 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="food"><summary><span class="chev">▸</span> Street food и десерты <span class="cnt">11 позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Бургер Мята</span><span class="mp">4 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Бургер Мексика</span><span class="mp">3 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Бургер BBQ</span><span class="mp">3 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Чикен бургер</span><span class="mp">3 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Клаб-сэндвич с курицей</span><span class="mp">3 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Чизкейк New-York</span><span class="mp">2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Тирамису «Маскарпоне»</span><span class="mp">2 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Шоколадный фондан</span><span class="mp">3 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Фруктовая нарезка</span><span class="mp">5 590 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="bar"><summary><span class="chev">▸</span> Коктейли <span class="cnt">12+ позиций</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Aperol Spritz</span><span class="mp">3 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Bacardi Mojito</span><span class="mp">2 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Long Island Iced Tea</span><span class="mp">2 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Negroni</span><span class="mp">2 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Porno Star</span><span class="mp">2 990 ₸</span></div>
+        <div class="mrow"><span class="mn">Lavender Spritz</span><span class="mp">3 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Sweet soft mint</span><span class="mp">2 590 ₸</span></div>
+        <div class="mrow"><span class="mn">Hendrick's Tonic</span><span class="mp">3 890 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="bar"><summary><span class="chev">▸</span> Лимонады <span class="cnt">0,5 / 1 л</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Смородина–Лимон</span><span class="mp">1 690 / 2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Клубника–Мята</span><span class="mp">1 690 / 2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Клубника–Маракуйя</span><span class="mp">1 690 / 2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Малина–Лайм</span><span class="mp">1 690 / 2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Манго–Маракуйя</span><span class="mp">1 690 / 2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Киви–Тархун</span><span class="mp">1 690 / 2 890 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="bar"><summary><span class="chev">▸</span> Кофе и чай <span class="cnt">кофе от 1090 ₸</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Эспрессо</span><span class="mp">1 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Американо</span><span class="mp">1 290 ₸</span></div>
+        <div class="mrow"><span class="mn">Капучино</span><span class="mp">1 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Латте</span><span class="mp">1 490 ₸</span></div>
+        <div class="mrow"><span class="mn">Чаи <small>цейлон, сенча, жасмин, марокканский и др.</small></span><span class="mp">2 390–2 690 ₸</span></div>
+        <div class="mrow"><span class="mn">Молочные коктейли <small>280 мл</small></span><span class="mp">2 290 ₸</span></div>
+      </div></details>
+
+      <details class="acc" data-g="bar"><summary><span class="chev">▸</span> Пиво и вино <span class="cnt">бокал / бутылка</span></summary><div class="acc-body">
+        <div class="mrow"><span class="mn">Zatecky gus <small>500 мл</small></span><span class="mp">2 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Kronenbourg Blanc <small>500 мл</small></span><span class="mp">2 890 ₸</span></div>
+        <div class="mrow"><span class="mn">Corona Extra <small>330 мл</small></span><span class="mp">3 390 ₸</span></div>
+        <div class="mrow"><span class="mn">Вино по бокалам <small>150 мл</small></span><span class="mp">от 2 090 ₸</span></div>
+        <div class="mrow"><span class="mn">Вино <small>бутылка 750 мл</small></span><span class="mp">от 14 590 ₸</span></div>
+      </div></details>
+    </div>
+    <p class="price-note reveal">Обслуживание 10%. Полный список напитков (крепкий алкоголь, виски, текила, вина) — на месте или в WhatsApp.</p>
+    <div style="margin-top:22px"><a class="btn btn-mint" href="https://wa.me/77017771752?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%BB">Забронировать стол</a></div>
   </div>
 </section>
 
@@ -293,7 +456,7 @@
 <script>
   // scroll-scrubbing: реальная дрон-съёмка крыши МЯТА покадрово по скроллу
   (function(){
-    const N=86, pad=n=>String(n).padStart(3,'0');
+    const N=70, pad=n=>String(n).padStart(3,'0');
     const scrub=document.getElementById('scrub'), cv=document.getElementById('scrubCanvas');
     if(!scrub||!cv) return;
     const ctx=cv.getContext('2d'); const imgs=[]; let started=false;
@@ -316,6 +479,18 @@
     window.addEventListener('scroll',onScroll,{passive:true});
     window.addEventListener('resize',()=>{resize();onScroll();});
   })();
+
+  // меню: табы-фильтры
+  document.querySelectorAll('.menu-tab').forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      document.querySelectorAll('.menu-tab').forEach(t=>t.classList.remove('active'));
+      tab.classList.add('active');
+      const g=tab.dataset.g;
+      document.querySelectorAll('.menu-acc .acc').forEach(a=>{
+        a.style.display=(g==='all'||a.dataset.g===g)?'':'none';
+      });
+    });
+  });
 
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
