@@ -19,7 +19,9 @@
 <meta property="og:title" content="МЯТА VYSHKA — панорамный лаундж-бар в Алматы">
 <meta property="og:description" content="Первая панорамная мята lounge. Кальян · кухня · караоке · терраса · вид на город. 4.7★ и 2341 отзыв на 2ГИС.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:url" content="https://myata-vyshka-site.vercel.app/">
+<meta property="og:image" content="https://myata-vyshka-site.vercel.app/assets/hero.jpg">
+<link rel="canonical" href="https://myata-vyshka-site.vercel.app/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c110e'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' fill='%2335d98a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +34,7 @@
   "@type": "BarOrClub",
   "name": "МЯТА VYSHKA",
   "description": "Первая панорамная мята lounge в Алматы на 16–18 этажах: кальян, кухня, караоке, летняя терраса, живая музыка, панорамный вид.",
-  "image": "assets/hero.jpg",
+  "image": "https://myata-vyshka-site.vercel.app/assets/hero.jpg",
   "priceRange": "₸₸",
   "telephone": "+77017771752",
   "openingHours": ["Su-Th 16:00-03:00","Fr-Sa 16:00-04:00"],
@@ -108,7 +110,8 @@
   @media(max-width:760px){.feat{grid-template-columns:1fr}}
   .fcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:36px 30px;transition:.25s}
   .fcard:hover{transform:translateY(-4px);border-color:var(--mint-dp);box-shadow:0 20px 44px rgba(0,0,0,.45)}
-  .fcard .ic{font-size:1.9rem;margin-bottom:12px}
+  .fcard .ic{margin-bottom:14px;color:var(--mint)}
+  .fcard .ic svg{width:34px;height:34px;display:block;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 7px rgba(53,217,138,.55))}
   .fcard h3{font-size:1.5rem;margin-bottom:8px;color:#f2fbf5}
   .fcard p{color:var(--muted);font-size:.93rem}
   .price-note{text-align:center;color:var(--muted);font-size:.84rem;margin-top:28px}
@@ -152,7 +155,7 @@
   .booking{text-align:center;background:radial-gradient(ellipse at center,rgba(53,217,138,.1),transparent 72%)}
   .book-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:12px}
   .book-phone{margin-top:30px}
-  .book-phone a{text-decoration:none;font-family:'Syne',sans-serif;font-weight:800;font-size:1.9rem;color:var(--mint-lt)}
+  .book-phone a{text-decoration:none;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.35rem,6vw,1.9rem);color:var(--mint-lt);white-space:nowrap}
   .book-phone span{display:block;font-size:.72rem;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px;font-family:'Manrope'}
 
   .addr{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.5rem,4vw,2.2rem);color:#f2fbf5}
@@ -207,7 +210,7 @@
   <div class="stat-grid">
     <div class="stat"><div class="n">4.7★</div><div class="l">2341 отзыв 2ГИС</div></div>
     <div class="stat"><div class="n">16–18</div><div class="l">этажи · панорама</div></div>
-    <div class="stat"><div class="n">🎤</div><div class="l">караоке</div></div>
+    <div class="stat"><div class="n">100+</div><div class="l">позиций в меню</div></div>
     <div class="stat"><div class="n">до 04</div><div class="l">в пт–сб</div></div>
   </div>
 </div>
@@ -218,12 +221,12 @@
     <h2 class="title">Место ярких традиций</h2>
     <p class="lead">Панорамный лаундж на высоте — кальян, кухня и атмосфера, куда возвращаются.</p>
     <div class="feat" style="text-align:left">
-      <div class="fcard"><div class="ic">🌆</div><h3>Панорамный вид</h3><p>16, 17 и 18 этажи — весь Алматы под вами. Лучший вид в городе, особенно на закате.</p></div>
-      <div class="fcard"><div class="ic">💨</div><h3>Кальян</h3><p>Фирменные кальяны от мастеров — подбор вкуса под ваше настроение.</p></div>
-      <div class="fcard"><div class="ic">🍽️</div><h3>Кухня</h3><p>Европейская и итальянская кухня: пицца, паста, стейки, морепродукты, кебабы.</p></div>
-      <div class="fcard"><div class="ic">🎤</div><h3>Караоке</h3><p>Пойте любимые хиты — караоке для компании и особых вечеров.</p></div>
-      <div class="fcard"><div class="ic">🎶</div><h3>Живая музыка · DJ</h3><p>По вечерам — музыканты и диджеи. Можно танцевать до самой ночи.</p></div>
-      <div class="fcard"><div class="ic">🌿</div><h3>Летняя терраса</h3><p>Открытая терраса с видом — тёплые вечера под открытым небом.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21h20"/><path d="M4 21V11h4v10"/><path d="M10 21V6h5v15"/><path d="M17 21V9h4v12"/><path d="M12.5 3v.01"/></svg></div><h3>Панорамный вид</h3><p>16, 17 и 18 этажи — весь Алматы под вами. Лучший вид в городе, особенно на закате.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4c-1.6 2.2 1.6 3.3 0 5.5"/><path d="M12 3c-1.6 2.2 1.6 3.3 0 5.5"/><path d="M17 4c-1.6 2.2 1.6 3.3 0 5.5"/><path d="M4 13h16"/><path d="M6 13c0 4 2.5 7 6 7s6-3 6-7"/></svg></div><h3>Кальян</h3><p>Фирменные кальяны от мастеров — подбор вкуса под ваше настроение.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2v7a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3z"/><path d="M21 15v7"/></svg></div><h3>Кухня</h3><p>Европейская и итальянская кухня: пицца, паста, стейки, морепродукты, кебабы.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1"/><path d="M12 18v4"/><path d="M8 22h8"/></svg></div><h3>Караоке</h3><p>Пойте любимые хиты — караоке для компании и особых вечеров.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Живая музыка · DJ</h3><p>По вечерам — музыканты и диджеи. Можно танцевать до самой ночи.</p></div>
+      <div class="fcard"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6C9.5 14.5 12 13 13 12"/></svg></div><h3>Летняя терраса</h3><p>Открытая терраса с видом — тёплые вечера под открытым небом.</p></div>
     </div>
     <p class="price-note reveal"><a href="#menu">Полное меню с ценами ниже ↓</a></p>
   </div>
@@ -378,14 +381,14 @@
   <div class="wrap center reveal">
     <div class="eyebrow">Атмосфера</div>
     <h2 class="title" style="margin-bottom:40px">МЯТА изнутри</h2>
-    <!-- РЕАЛЬНЫЕ фото из их Instagram @myata_vyshka -->
+    <!-- РЕАЛЬНЫЕ фото из их Instagram @myata_vyshka + кадры дрон-съёмки -->
     <div class="gal">
       <figure><img src="assets/g1.jpg" alt="МЯТА VYSHKA — интерьер, Алматы" loading="lazy"></figure>
-      <figure><img src="assets/g2.jpg" alt="МЯТА VYSHKA — атмосфера" loading="lazy"></figure>
-      <figure><img src="assets/g3.jpg" alt="МЯТА VYSHKA — лаундж" loading="lazy"></figure>
-      <figure><img src="assets/g4.jpg" alt="МЯТА VYSHKA — вечер" loading="lazy"></figure>
-      <figure><img src="assets/g5.jpg" alt="МЯТА VYSHKA — панорама" loading="lazy"></figure>
-      <figure><img src="assets/g6.jpg" alt="МЯТА VYSHKA — кухня и напитки" loading="lazy"></figure>
+      <figure><img src="assets/g8.jpg" alt="МЯТА VYSHKA — терраса вечером с высоты" loading="lazy"></figure>
+      <figure><img src="assets/g5.jpg" alt="МЯТА VYSHKA — кухня и блюда" loading="lazy"></figure>
+      <figure><img src="assets/g7.jpg" alt="МЯТА VYSHKA — вышка на закате, дрон-съёмка" loading="lazy"></figure>
+      <figure><img src="assets/g6.jpg" alt="МЯТА VYSHKA — летняя терраса с панорамой" loading="lazy"></figure>
+      <figure><img src="assets/g9.jpg" alt="МЯТА VYSHKA — купол вышки ночью" loading="lazy"></figure>
     </div>
     <p class="price-note reveal"><a href="https://www.instagram.com/myata_vyshka">Больше в Instagram @myata_vyshka →</a></p>
   </div>
